@@ -111,9 +111,14 @@ dotsync will look for
     ~/$DOTFILES/dotfile.d/localhost
     ~/$DOTFILES/dotfile.d/$HOSTNAME
     ~/$DOTFILES/dotfile.d/$DOMAIN
+    ~/$DOTFILES/dotfile.d/$OS.$OSVER.$ARCH
+    ~/$DOTFILES/dotfile.d/$OS.$OSMAJORVER.$ARCH
+    ~/$DOTFILES/dotfile.d/$OS.$OSVER
+    ~/$DOTFILES/dotfile.d/$OS.$OSMAJORVER
+    ~/$DOTFILES/dotfile.d/$OS
 
 And link the first one it finds instead of the standard dotfile.  The `localhost`
-dotfile should be excuded from your repo.
+dotfile should be excuded from your repo and is ignore in the included `.gitignore`
 
 Machine specific Dotfiles
 -------------------------
